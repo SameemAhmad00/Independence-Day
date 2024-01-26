@@ -1,39 +1,269 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <title>Page Title</title>
-    </head>
-    <body background="https://dl.dropbox.com/scl/fi/x397ig71keig334oti51m/beautiful-indian-independence-day_92153-72.jpg?rlkey=b69ys0wyu8quy6n63avu4qzqf&dl=0">
-    
-   <fieldset style="border-width:thick;border-color:yellow;border-radius:10px;"> 
-          
-       <ul type="circle">
-       <li>Independence Day is celebrated on August 15 annually.</li>
-       <li>It is one of the most important national festivals.</li>
-       <li>The day marks the freedom of the country from colonial rule.</li></ul>
-       <ul type="Square">
-       <li>This year marks the 77th anniversary of the country's independence.</li>
-       <li>Independence Day is one of the two national holidays of India.</li>
-       <li>It is celebrated on August 15 every year.</li></ul>
-       
-       <audio controls>
-           <source src="https://dl.dropbox.com/scl/fi/j2la0b515lgllrj4d6bqq/Sare-Jahan-Se-Achha-Hindustan-Hamara-Seema-Mishra-1.mp3?rlkey=rkrqyhfqnzymkti71nu8gewbi&dl=0">
-           </audio>
-<iframe src="https://youtube.com/embed/wRhrpGYV4kM?si=_G8rNteChug4XyWE"></iframe>
+<head>
+<meta charset="utf-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>happy republic day</title>
+<style>
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+}
+body {
+font-family:sans-serif;
+font-size:15px;
+background:linear-gradient(0deg, rgb(85, 217, 233),rgb(86, 73, 252));
+height:631px;
+}
+h1{
+font-family:cursive;
+text-align:center;
+margin:30px 0;
+color:#fff;
+font-weight:bold;
+}
+.container{
+ position:relative;
+ width:100%;
+ max-width:360px;
+ margin:auto;
+}
+.fleg-wrapper {
+ width:200px;
+ transform:translateX(-40px);
+}
 
-  <a href="https://ibb.co/vqQqGDM"><img src="https://i.ibb.co/NCmCP7G/india-flag-happy-independence-day-by-prince-pal-by-princepal-d7ujxuq.jpg"width="300"></a>  
-   
-  <font face="cursive" color="Orange"> On 15 August 1947, the first Prime Minister of India, Jawaharlal Nehru raised the Indian national flag above the Lahori Gate of the Red Fort in Delhi. On each subsequent Independence Day, the incumbent Prime Minister customarily raises the flag and gives an address to the nation</font>
+.fleg {
+ position:absolute;
+ top:20px;
+ left:50%;
+ width:270px;
+}
+.fleg div{
+ width:100%;
+ height:50px;
+}
+.f1 {
+ background:#dd7a1f;
+}
+.f2 {
+background:#fff;
+position:relative;
+}
+.f3 {
+background:#046b26;
+}
+.cycle {
+ position:relative;
+ width:50px;
+ max-width:50px;
+ height:50px;
+ border-radius:50%;
+ margin:auto;
+ border:2px solid #00f;
+ overflow:hidden;
+ transition: transform 1s linear;
+ animation:rotate 1s linear infinite;
+}
+@keyframes rotate{
+ to{
+  transform:rotate(360deg); 
+ }
+}
+.cycle:before{
+ content:'';
+ position:absolute;
+ top:50%;
+ left:50%;
+ transform:translate(-50%,-50%);
+ height:14px;
+ width:14px;
+ background:#00f;
+ border-radius:50%;
+}
+.cycle span {
+ position:absolute;
+ top:50%;
+ left:50%;
+ display:block;
+ transform:translate(-50%,-50%);
+ width:2px;
+ height:44px;
+ background:#00f;
+ border-radius:1px;
+}
+.fleg:hover .f2 .cycle {
+ transform:rotate(360deg);
+}
+.cycle span:nth-child(1) {
+ top:0;
+ transform:rotate(0deg) translate(-5%,1%);
+}
+.cycle span:nth-child(2) {
+ top:0;
+ transform:rotate(90deg) translate(0%,2%);
+}
+.cycle span:nth-child(3) {
+ top:0;
+ transform:rotate(45deg) translate(0%,2%);
+}
+.cycle span:nth-child(4) {
+ top:0;
+ transform:rotate(-45deg) translate(0%,1%);
+}
+.cycle span:nth-child(5) {
+ top:0;
+ transform:rotate(22deg) translate(0%,2%);
+}
+.cycle span:nth-child(6) {
+ top:0;
+ transform:rotate(-22deg) translate(0%,2%);
+}
+.cycle span:nth-child(7) {
+ top:0;
+ transform:rotate(67deg) translate(0%,2%);
+}
+.cycle span:nth-child(8) {
+ top:0;
+ transform:rotate(-67deg) translate(0%,2%);
+}
+.stick {
+ position:relative;
+ height:500px;
+ width:20px;
+ background:#ffffd6;
+ box-shadow:inset 0px 0px 5px 1px rgba(0,0,0,0.2);
+ margin:auto;
+ border-radius:10% 10%  0 0;
+}
+
+.stick:before{
+ content:'';
+ position:absolute;
+ top:0;
+ left:-4px;
+ height:14px;
+ width:28px;
+ background:#ffffd6;
+ border-radius:5px;
+ box-shadow:inset 0px 0px 5px 2px rgba(0,0,0,0.2);
+}
+
+.stick .tip {
+ position:absolute;
+ top:-18px;
+ left:0;
+ height:18px;
+ width:20px;
+ background:#ffffd6;
+ border-radius:50% 50% 0 0; 
+ box-shadow:inset 0px 0px 5px 2px rgba(0,0,0,0.2);
+}
+
+
+.footer div{
+ height:20px;
+ background:#ad5757;
+ box-shadow:inset 0px 4px 3px 2px rgba(255,255,255,0.4);
+ border-top-left-radius:5px;
+ border-top-right-radius:5px;
+ margin:auto;
+}
+.footer div:nth-child(1){
+ width:80px;
+}
+.footer div:nth-child(2){
+ width:130px;
+}
+.footer div:nth-child(3){
+ width:180px;
+ height:25px;
+}
+
+
+.content {
+position:absolute;
+top:200px;
+right:10px;
+width:250px;
+color:#fff;
+}
+.content h2{
+ text-align:left;
+ margin-bottom:10px;
+ font-size:2em;
+}
+#audio {
+position:absolute;
+z-index:-1;
+height:0;
+visibility:hidden;
+}
+</style>
+</head>
+<body>
+<h1>~ Happy independence Day ~ </h1>
+<section class="container" onclick="playAudio()">
+ <div class="fleg-wrapper">
+ <div class="fleg">
+   <div class="f1"></div>
+   <div class="f2">
+     <div class="cycle"> 
+     <span></span>
+     <span></span>
+     <span></span>
+     <span></span>
+     <span></span>
+     <span></span>
+     <span></span>
+     <span></span>
+     </div>
+   </div>
+   <div class="f3"></div>
+ </div><!-- fleg -->
+ <div class="stick">
+  <div class="tip" ></div>
+ </div>
+ <div class="footer">
+  <div></div>
+  <div></div>
+  <div></div>
+ </div>
+ </div><!-- fleg-wrapper -->
+ <div class="content">
+  <h2>RastriyGan</h2>
+  <p>
+  Jana gana mana adhi naayaka jaya hai! 
+  Bhaarat bhaagya vidhaata 
+  Punjab Sindh Gujarat Maraatha, 
+  Dravid Utkala Bangaa. 
+  Vindhya Himachala Yamuna Ganga, 
+  Uchhala jaladhi taranga. 
+  Tava shubh naame jaage, 
+  Tava shubh aashish maage
+  Gahe tava jaya-gaatha. 
   
-  <a href="https://ibb.co/c36MkG0"><img src="https://i.ibb.co/8srTNWq/indian-flag-with-happy-independence-day-vector-21540048.jpg"width="300"></a>
-  
- <p> <font color="blue" face="cursive">India celebrates its Independence Day on 15th August every year. Independence day reminds us of all the sacrifices that were made by our  fighters to make India free from British rule. On 15th August 1947, India was declared independent from British colonialism and became the largest democracy in the world.</font>
-     
- </p>  
-<a href="https://ibb.co/4PHYrHR"><img src="https://i.ibb.co/r4VcrV2/indian-flag.jpg" width="300"></a></font>
- <p> <font color="green" face="cursive">It marks the day when the country gained independence from British rule in 1947. This day reminds us of the sacrifices and courage all men and women took to free our country from the Britishers. This day we pay tribute to those freedom fighters who laid down their lives for the sake of the motherland.</font></p>
+  Jana-gana-mangaladayaka jaya hai! 
+  Bharat bhagya vidhata. 
+  Jaya hai! Jaya hai! Jaya hai! 
+  Jaya Jaya Jaya Jaya hai!
+  </p>
+ </div>
+ </section>
+ <!--
+ <audio src="http://twilight3g.com/mp3-ringtones/tone/2015/bollywood/meramulkme_nSBrBe54.mp3" id="audio" controls>
+ </audio>-->
+ <audio  id="audio" controls="controls" src="https://www.dropbox.com/s/8l4r54wvhgkppso/Sare%20jahan%20se%20acha%20Ringtones%20-%20Free%20by%20ZEDGE%E2%84%A2.mp3?dl=1"></audio>
  
- <center><a href="https://en.m.wikipedia.org/wiki/Independence_Day_(India)">HAPPY INDEPENDENCE DAY</a></center>
- </fieldset>
-    </body>
+ <script>
+ 
+ function playAudio() { 
+ var x = document.getElementById("audio"); 
+ x.play(); 
+ } 
+alert ("Happy  Independence Day");
+alert ("Click On The Blue Spinning Wheel")
+ </script>
+ </body>
 </html>
